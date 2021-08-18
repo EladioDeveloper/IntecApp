@@ -4,10 +4,14 @@ Intec App Clone using Xamarin Forms
 
 Web App Reference [procesos.intec.edu.do](https://procesos.intec.edu.do)
 
-## Screenshots
+## Screenshots / Clone APP
 
 <img width="600" src="Screenshots/ss1.jpg">
 <img width="600" src="Screenshots/ss2.jpg">
+
+## Screenshot / Original App
+
+<img width="600" src="Screenshots/ss3.jpg">
 
 ## Tools used
 
