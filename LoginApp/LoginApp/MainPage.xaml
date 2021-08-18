@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:pages="clr-namespace:Xamarin.CommunityToolkit.Sample.Pages"
+             x:Class="LoginApp.MainPage">
+
+    <StackLayout BackgroundColor="#e4000f">
+
+        <Image Source="logo_intec.png" WidthRequest="100" HeightRequest="100" Margin="20,100,20,100"/>
+
+        
+        <Frame Padding="8" CornerRadius="2" Margin="20,0,20,0" BackgroundColor="White" HasShadow="False">
+            <Grid ColumnDefinitions="10*, 90*">
+                <Label Grid.Column="0"
+                       HorizontalTextAlignment="Center"
+                       Text="👨‍🎓"
+                       VerticalTextAlignment="Center"
+                       />
+                
+                <Entry x:Name="ID" Grid.Column="1" Placeholder="ID" TextColor="Black" PlaceholderColor="Black">
+                    <Entry.Effects>
+                        <xct:RemoveBorderEffect/>
+                    </Entry.Effects>
+                </Entry>
+            </Grid>
+            
+        </Frame>
+        <Frame Padding="8" CornerRadius="2" Margin="20,0,20,0" BackgroundColor="White" HasShadow="False">
+            <Grid ColumnDefinitions="10*, 90*">
+                <Label Grid.Column="0"
+                       HorizontalTextAlignment="Center"
+                       Text="🔒"
+                       VerticalTextAlignment="Center" />
+
+
+                <Entry x:Name="Password" Grid.Column="1" Placeholder="Password" TextColor="Black" PlaceholderColor="Black" IsPassword="True">
+                    <Entry.Effects>
+                        <xct:RemoveBorderEffect/>
+                    </Entry.Effects>
+                </Entry>
+            </Grid>
+        </Frame>
+
+        <Label  Margin="20,0,20,0"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  FontSize="24" Text="¿Olvidó su contraseña?" TextColor="White" />
+
+        <Button x:Name="LoginButton"  Margin="20,30,20,20" BackgroundColor="White" TextColor="#e4000f" Text="Iniciar Sesion" Clicked="LoginButton_Clicked"  />
+
+        
+
+
+
+    </StackLayout>
+
+</ContentPage>
