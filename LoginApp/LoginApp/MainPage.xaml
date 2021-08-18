@@ -18,7 +18,7 @@
                        VerticalTextAlignment="Center"
                        />
                 
-                <Entry x:Name="ID" Grid.Column="1" Placeholder="ID" TextColor="Black" PlaceholderColor="Black">
+                <Entry x:Name="idEntry" Grid.Column="1" Placeholder="ID" TextColor="Black" PlaceholderColor="Black">
                     <Entry.Effects>
                         <xct:RemoveBorderEffect/>
                     </Entry.Effects>
@@ -34,7 +34,7 @@
                        VerticalTextAlignment="Center" />
 
 
-                <Entry x:Name="Password" Grid.Column="1" Placeholder="Password" TextColor="Black" PlaceholderColor="Black" IsPassword="True">
+                <Entry x:Name="passwordEntry" Grid.Column="1" Placeholder="Password" TextColor="Black" PlaceholderColor="Black" IsPassword="True">
                     <Entry.Effects>
                         <xct:RemoveBorderEffect/>
                     </Entry.Effects>
@@ -44,7 +44,7 @@
 
         <Label  Margin="20,0,20,0"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  FontSize="24" Text="¿Olvidó su contraseña?" TextColor="White" />
 
-        <Button x:Name="LoginButton"  Margin="20,30,20,20" BackgroundColor="White" TextColor="#e4000f" Text="Iniciar Sesion" Clicked="LoginButton_Clicked"  />
+        <Button x:Name="LoginButton"  Margin="20,30,20,20" BackgroundColor="White" TextColor="#e4000f" Text="Iniciar Sesion" Clicked="OnLoginButtonClicked"      />
 
         
 

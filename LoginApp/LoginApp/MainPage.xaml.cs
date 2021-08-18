@@ -15,12 +15,13 @@ namespace LoginApp
             InitializeComponent();
         }
 
-        private async void LoginButton_Clicked(object sender, EventArgs e)
+        private async void OnLoginButtonClicked(object sender, EventArgs e)
         {
-            if (ID.Text == "" || Password.Text == "")
+            if (String.IsNullOrEmpty(idEntry.Text) || String.IsNullOrEmpty(passwordEntry.Text))
                 await DisplayAlert("Error", "Campos Vacios", "OK");
             else
-                await DisplayAlert("Bienvenido", $"Hola {ID.Text}", "OK");
+                await DisplayAlert("Bienvenido", $"Hola {idEntry.Text}", "OK");
         }
+
     }
 }
